@@ -1,0 +1,15 @@
+<div class="col-md-8 offset-md-2">
+    <div class="card text-center mt-4">
+        <div class="card-header">
+            <a href="{{enlace.enlace}}" target="_blank">{{enlace.titulo}}</a>
+        </div>
+        <div class="card-body">
+            Votos:
+            <h3 class="display-3">{{enlace.votos}}</h3>
+        </div>
+        <div class="card-footer d-flex justify-content-between">
+            <button class="btn btn-danger" (click)="enlace.voteDown()">Negativo</button>
+            <button class="btn btn-success" (click)="enlace.voteUp()">Positivo</button>
+        </div>
+    </div>
+</div>
